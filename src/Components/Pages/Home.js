@@ -1,4 +1,5 @@
 import React from 'react';
+import ExploreProgram from './ExploreProgram';
 import FullRefound from './FullRefound';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             
             <FullRefound />
+            <ExploreProgram />
         </div>
     );
 };
