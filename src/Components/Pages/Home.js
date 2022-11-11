@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomerQuery from './CustomerQuery';
 import ExploreProgram from './ExploreProgram';
 import FullRefound from './FullRefound';
 import OurClient from './OurClient';
@@ -14,6 +15,7 @@ const Home = () => {
             <OurClient />
             <RecepsSuccess />
             <OurOffers />
+            <CustomerQuery />
         </div>
     );
 };
