@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assect/logo.png'
-const Navigation = () => {
+const Navigation = ({ handleThemeChange, theme }) => {
 
     const naivations = <>
 
         <li><Link to='/programs'>Explor-Programs</Link></li>
         <li><Link to='/refoud'>Refoud-Advantag</Link></li>
         <li><Link to='/about'>About-us</Link></li>
+        {/* theme icon started here  */}
+        <button
+            onClick={handleThemeChange}
+            className="rounded-full lg:mx-2 font-bold pr-2">
+            {theme ? <i class="fa-solid fa-sun"></i> : <i class="fa-regular fa-moon"></i>}
+        </button>
+        {/* theme icon Ends here  */}
 
     </>
     return (
@@ -17,7 +24,7 @@ const Navigation = () => {
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu dropdown-content mt-3 p-2 w-52 font-sans text-violet-500">
+                    <ul tabIndex={0} className="menu dropdown-content mt-3 p-2 w-52 font-sans ">
                         {naivations}
                     </ul>
                 </div>
@@ -25,7 +32,7 @@ const Navigation = () => {
 
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal p-0 font-sans text-violet-800 font-bold">
+                <ul className="menu menu-horizontal p-0 font-sans font-bold">
 
                     {naivations}
                 </ul>
