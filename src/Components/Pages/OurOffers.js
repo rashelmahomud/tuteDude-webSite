@@ -4,7 +4,7 @@ import offer from '../../assect/discount.png'
 const OurOffers = () => {
     return (
         <div>
-            <div className='my-10 bg-blue-500 grid lg:grid-cols-2 grid-cols-1  bg-gradient-to-r to-violet-400 from-fuchsia-700 lg:p-16 rounded '>
+            <div className='mt-10 bg-blue-500 grid lg:grid-cols-2 grid-cols-1  bg-gradient-to-r to-violet-400 from-fuchsia-700 lg:p-16 rounded '>
 
                 <div className='p-2'>
                     <img className='rounded mx-auto' src={offer} alt='pc-men' />

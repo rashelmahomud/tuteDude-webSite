@@ -5,6 +5,7 @@ import Programs from './Components/Pages/Programs';
 import About from './Components/Pages/About';
 import RefoudAdventag from './Components/Pages/RefoudAdventag';
 import Navigation from './Components/Shared/Navigation';
+import Footer from './Components/Shared/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/refoud' element={<RefoudAdventag />}></Route>
         <Route path='/about' element={<About />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
