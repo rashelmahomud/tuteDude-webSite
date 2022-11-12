@@ -1,5 +1,6 @@
 import React from 'react';
 import Cetagoris from '../Cetagory/Cetagoris';
+import CustomerReview from '../Review/CustomerReview';
 import CustomerQuery from './CustomerQuery';
 import ExploreProgram from './ExploreProgram';
 import FullRefound from './FullRefound';
@@ -17,6 +18,7 @@ const Home = () => {
             <RecepsSuccess />
             <OurOffers />
             <Cetagoris />
+            <CustomerReview />
             <CustomerQuery />
         </div>
     );
