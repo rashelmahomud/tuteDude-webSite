@@ -1,5 +1,5 @@
 import React from 'react';
-import banner from '../../assect/fsd.png'
+import banner from '../../assect/banner2.png'
 
 const FullRefound = () => {
     return (
