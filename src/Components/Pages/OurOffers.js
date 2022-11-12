@@ -10,7 +10,7 @@ const OurOffers = () => {
                     <img className='rounded mx-auto' src={offer} alt='pc-men' />
                 </div>
                 <div className='text-left lg:px-20 p-3'>
-                    <span className='text-3xl text-white font-bold bg-violet-400 p-2 rounded '>TodeDode Money Back Offers</span> <br />
+                    <span className='lg:text-3xl text-white font-bold bg-violet-400 p-2 rounded '>TodeDode Money Back Offers</span> <br />
 
                     <h3 className='text-3xl text-white font-bold p-3'>Money Back reward</h3>
                     <p className='text-white font-bold mt-5'>You pay ZERO on completing Tutedude online certification course, become elligible for Tutedude REFUND PROGRAMME, and get Tutedude Certified at the cost of 0 INR</p>
