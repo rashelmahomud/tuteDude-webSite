@@ -1,4 +1,5 @@
 import React from 'react';
+import Cetagoris from '../Cetagory/Cetagoris';
 import CustomerQuery from './CustomerQuery';
 import ExploreProgram from './ExploreProgram';
 import FullRefound from './FullRefound';
@@ -15,6 +16,7 @@ const Home = () => {
             <OurClient />
             <RecepsSuccess />
             <OurOffers />
+            <Cetagoris />
             <CustomerQuery />
         </div>
     );
