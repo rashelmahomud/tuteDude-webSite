@@ -1,5 +1,8 @@
 import React from "react";
 import OurClient from "../Pages/OurClient";
+import Business from "./Business";
+import Creative from "./Creative";
+import Tachnical from "./Tachnical";
 
 const Tabs = ({ color }) => {
     const [openTab, setOpenTab] = React.useState(1);
@@ -73,13 +76,13 @@ const Tabs = ({ color }) => {
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                                    <OurClient />
+                                    <Tachnical />
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                    <OurClient />
+                                    <Business />
                                 </div>
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                                    <OurClient />
+                                    <Creative />
                                 </div>
                             </div>
                         </div>
