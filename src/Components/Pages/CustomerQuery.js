@@ -6,21 +6,22 @@ const CustomerQuery = () => {
             <h1 className='text-3xl text-center font-bold mt-10'>Have Any Query</h1>
             <div className='grid grid-cols-2 lg:px-20 gap-10 my-10'>
                 <div className='flex mx-auto'>
-                    <h2 className='text-2xl font-bold bg-gray-300 '><span className='lg:p-20 p-5'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl"></i></button>
+                    <h2 className='text-2xl font-bold bg-gradient-to-r to-violet-400 from-fuchsia-700 '><span className='lg:p-20 p-5 text-white'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl text-white"></i></button>
                     </h2>
                 </div>
                 <div className='flex mx-auto'>
-                    <h2 className='text-2xl font-bold bg-gray-300 '><span className='lg:p-20 p-5'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl"></i></button>
+                    <h2 className='text-2xl font-bold bg-gradient-to-r to-violet-400 from-fuchsia-700 '><span className='lg:p-20 p-5 text-white'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl text-white"></i></button>
                     </h2>
                 </div>
                 <div className='flex mx-auto'>
-                    <h2 className='text-2xl font-bold bg-gray-300 '><span className='lg:p-20 p-5'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl"></i></button>
+                    <h2 className='text-2xl font-bold bg-gradient-to-r to-violet-400 from-fuchsia-700 '><span className='lg:p-20 p-5 text-white'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl text-white"></i></button>
                     </h2>
                 </div>
                 <div className='flex mx-auto'>
-                    <h2 className='text-2xl font-bold bg-gray-300 '><span className='lg:p-20 p-5'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl"></i></button>
+                    <h2 className='text-2xl font-bold bg-gradient-to-r to-violet-400 from-fuchsia-700 '><span className='lg:p-20 p-5 text-white'>Already Asked Query</span>   <button className="btn btn-outline rounded-none "><i class="fa-solid fa-arrow-right mx-5 text-2xl text-white"></i></button>
                     </h2>
                 </div>
+                
             </div>
 
             <div className='text-center my-10'>

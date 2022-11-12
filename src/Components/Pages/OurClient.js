@@ -22,7 +22,7 @@ const OurClient = () => {
                 <h3 className='text-fuchsia-500 font-bold'>return advantage</h3>
             </div>
             <div className='bg-gradient-to-r from-slate-100 to-gray-300 p-5 rounded-md'>
-                <h1 className='text-3xl'>Highly Skilled &</h1>
+                <h1 className='text-3xl text-fuchsia-700'>Highly Skilled &</h1>
                 <h3 className='text-fuchsia-500 font-bold'>Structured course</h3>
             </div>
             <div className='bg-gradient-to-r from-slate-100 to-gray-300 p-5 rounded-md'>
