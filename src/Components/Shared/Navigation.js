@@ -39,7 +39,7 @@ const Navigation = ({ handleThemeChange, theme }) => {
             </div>
             <div className="navbar-end">
 
-                <button className="btn btn-outline rounded-none lg:mr-5">Login</button>
+                {/* <button className="btn btn-outline rounded-none lg:mr-5">Login</button> */}
                 <button className="btn btn-outline rounded-none lg:mr-5 bg-violet-800 font-bold text-white bg-gradient-to-r from-violet-300 to-violet-700">Sign Up</button>
             </div>
         </div>

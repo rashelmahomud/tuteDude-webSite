@@ -1,89 +1,74 @@
-import React from "react";
-// Import Swiper React components
+
+import React, { useEffect, useState, useRef } from 'react';
+import Review from './Review';
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import photo from '../../assect/photoshop1.jpg'
+
 // Import Swiper styles
 import "swiper/css";
-export default function CustomerReview() {
+import "swiper/css/pagination";
+
+import "./styles.css";
+
+// import required modules
+import { Pagination } from "swiper";
+
+const CustomerReview = () => {
+    const [reviews, setReviews] = useState([]);
+    useEffect(() => {
+        fetch('reviews.json')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
     return (
-        <div className="">
-            <h1 className="text-2xl font-bold my-10">Here, What Others Have to Say</h1>
-            <div className=" lg:mx-24 lg:px-10 ">
-                <Swiper watchSlidesProgress={true} slidesPerView={3}>
+        <div>
 
-                    <div className='grid lg:grid-cols-2 grid-cols-1'>
-
-
-                        <SwiperSlide>
-                            <div className="bg-violet-500 p-5 m-5 rounded">
-                                <div className="flex my-3">
-                                    <img className="w-16 rounded-full" src={photo} alt='photo' />
-                                    <div className="mx-auto">
-                                        <h1 className="font-bold  text-white">Rafsan Hassen</h1>
-                                        <span className="text-white">Student.Net.Dhile</span>
-                                    </div>
-                                </div>
-                                <p className="text-white font-sans text-left px-3 text-justify">My Dear Honorable Fiverr Buyer. Thanks a Lot for Visiting My profile. I am SEO Professional and SMM Marketer. I am expert in Facebook marketing, YouTube Marketing, Photo editing, Video Editing and Content making. I've successfully completed My professional Diploma Degree in Digital marketing From Outsourcing Institute . I can understand the customers...</p>
-
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="bg-violet-500 p-5 m-5 rounded">
-                                <div className="flex my-3">
-                                    <img className="w-16 rounded-full" src={photo} alt='photo' />
-                                    <div className="mx-auto">
-                                        <h1 className="font-bold  text-white">Rafsan Hassen</h1>
-                                        <span className="text-white">Student.Net.Dhile</span>
-                                    </div>
-                                </div>
-                                <p className="text-white font-sans text-left px-3 text-justify">My Dear Honorable Fiverr Buyer. Thanks a Lot for Visiting My profile. I am SEO Professional and SMM Marketer. I am expert in Facebook marketing, YouTube Marketing, Photo editing, Video Editing and Content making. I've successfully completed My professional Diploma Degree in Digital marketing From Outsourcing Institute . I can understand the customers...</p>
-
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="bg-violet-500 p-5 m-5 rounded">
-                                <div className="flex my-3">
-                                    <img className="w-16 rounded-full" src={photo} alt='photo' />
-                                    <div className="mx-auto">
-                                        <h1 className="font-bold  text-white">Rafsan Hassen</h1>
-                                        <span className="text-white">Student.Net.Dhile</span>
-                                    </div>
-                                </div>
-                                <p className="text-white font-sans text-left px-3 text-justify">My Dear Honorable Fiverr Buyer. Thanks a Lot for Visiting My profile. I am SEO Professional and SMM Marketer. I am expert in Facebook marketing, YouTube Marketing, Photo editing, Video Editing and Content making. I've successfully completed My professional Diploma Degree in Digital marketing From Outsourcing Institute . I can understand the customers...</p>
-
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="bg-violet-500 p-5 m-5 rounded">
-                                <div className="flex my-3">
-                                    <img className="w-16 rounded-full" src={photo} alt='photo' />
-                                    <div className="mx-auto">
-                                        <h1 className="font-bold  text-white">Rafsan Hassen</h1>
-                                        <span className="text-white">Student.Net.Dhile</span>
-                                    </div>
-                                </div>
-                                <p className="text-white font-sans text-left px-3 text-justify">My Dear Honorable Fiverr Buyer. Thanks a Lot for Visiting My profile. I am SEO Professional and SMM Marketer. I am expert in Facebook marketing, YouTube Marketing, Photo editing, Video Editing and Content making. I've successfully completed My professional Diploma Degree in Digital marketing From Outsourcing Institute . I can understand the customers...</p>
-
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="bg-violet-500 p-5 m-5 rounded">
-                                <div className="flex my-3">
-                                    <img className="w-16 rounded-full" src={photo} alt='photo' />
-                                    <div className="mx-auto">
-                                        <h1 className="font-bold  text-white">Rafsan Hassen</h1>
-                                        <span className="text-white">Student.Net.Dhile</span>
-                                    </div>
-                                </div>
-                                <p className="text-white font-sans text-left px-3 text-justify">My Dear Honorable Fiverr Buyer. Thanks a Lot for Visiting My profile. I am SEO Professional and SMM Marketer. I am expert in Facebook marketing, YouTube Marketing, Photo editing, Video Editing and Content making. I've successfully completed My professional Diploma Degree in Digital marketing From Outsourcing Institute . I can understand the customers...</p>
-
-                            </div>
-                        </SwiperSlide>
-
-
-                    </div>
-                </Swiper>
+            <div>
+                <h1 className='text-4xl text-center my-20'>Here, What Others Have to Say</h1>
             </div>
+
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                pagination={{
+                    clickable: true,
+                }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
+
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3 lg:mx-24 gap-12 '>
+                    {
+                        reviews.map(review => <SwiperSlide>
+                            <Review review={review} key={review._id}></Review>
+                        </SwiperSlide>)
+                    }
+                </div>
+
+
+            </Swiper>
+
+
+
+
+
         </div>
     );
-}
+};
+
+export default CustomerReview;
